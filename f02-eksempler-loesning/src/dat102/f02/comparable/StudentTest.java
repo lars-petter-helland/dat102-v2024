@@ -4,10 +4,10 @@ import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.Test;
 
-class StudentTest {
+public class StudentTest {
 
 	@Test
-	void test() {
+	void studenterSkalSammenlignesPaaStudentnr() {
 		
 		Student stud345 = new Student(345, "Anne");
 		Student stud123 = new Student(123, "Knut");
@@ -18,7 +18,5 @@ class StudentTest {
 		
 		assertFalse(stud345.equals(stud123));
 		assertTrue(stud345.equals(stud345));
-		
 	}
-
 }

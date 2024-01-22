@@ -17,9 +17,7 @@ public class Student implements Comparable<Student> {
 		return this.studentnr - other.studentnr;
 	}
 	
-	/*
-	 * Bør/skal samsvare med compareTo
-	 */
+	/* equals() bør/skal alltid samsvare med compareTo() */
 	@Override
 	public boolean equals(Object obj) {
 		if (this == obj)
@@ -32,9 +30,7 @@ public class Student implements Comparable<Student> {
 		return studentnr == other.studentnr;
 	}
 
-	/*
-	 * Bør/skal samsvare med equals
-	 */
+	/* hashCode() bør/skal alltid samsvare med equals() */
 	@Override
 	public int hashCode() {
 		return Objects.hash(studentnr);
