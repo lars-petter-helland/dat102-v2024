@@ -1,4 +1,6 @@
-package no.hvl.dat102.oblig2.parenteser;
+package no.hvl.dat102.tabellstabel;
+
+import java.util.EmptyStackException;
 
 /**
  * An interface for the ADT stack.
